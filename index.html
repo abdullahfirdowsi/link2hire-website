@@ -3,64 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link2Hire - Verified Job Updates for Freshers & Tech</title>
+    <title>Link2Hire - Coming Soon</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        .logo-zoom {
-            transition: transform 0.3s ease-in-out;
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
         }
-        .logo-zoom:hover {
-            transform: scale(1.1);
+        
+        h1 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .bg-glow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .glow-circle {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.08;
+        }
+
+        .glow-1 {
+            width: 500px;
+            height: 500px;
+            background: #3b82f6;
+            top: -150px;
+            right: -100px;
+        }
+
+        .glow-2 {
+            width: 400px;
+            height: 400px;
+            background: #2563eb;
+            bottom: -100px;
+            left: -50px;
+        }
+
+        .container {
+            position: relative;
+            z-index: 10;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .content {
+            text-align: center;
+            max-w-md;
+        }
+
+        .logo {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 60px;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.06);
+        }
+
+        .heading {
+            font-size: 56px;
+            font-weight: 700;
+            margin: 0 0 12px 0;
+            color: #0f172a;
+            letter-spacing: -0.5px;
+        }
+
+        .tagline {
+            font-size: 16px;
+            color: #64748b;
+            margin: 0 0 48px 0;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .input {
+            padding: 14px 16px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            background: #f8fafc;
+            color: #1e293b;
+            font-size: 15px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .input:focus {
+            outline: none;
+            border-color: #3b82f6;
+            background: #ffffff;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .input::placeholder {
+            color: #94a3b8;
+        }
+
+        .button {
+            padding: 14px 24px;
+            background: #0f172a;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .button:hover {
+            background: #1e293b;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 16px rgba(15, 23, 42, 0.12);
+        }
+
+        .button:active {
+            transform: translateY(0);
+        }
+
+        .footer {
+            font-size: 12px;
+            color: #94a3b8;
+            margin-top: 24px;
+        }
+
+        @media (max-width: 640px) {
+            .heading {
+                font-size: 42px;
+            }
+
+            .logo {
+                width: 140px;
+                height: 140px;
+                margin-bottom: 48px;
+            }
+
+            .tagline {
+                font-size: 15px;
+                margin-bottom: 40px;
+            }
+
+            .input,
+            .button {
+                font-size: 14px;
+                padding: 13px 14px;
+            }
         }
     </style>
 </head>
-<body class="bg-white text-gray-900">
-    <section class="min-h-screen flex items-center justify-center px-4">
-        <div class="max-w-2xl w-full text-center">
-            <img src="src/logo.png" alt="Link2Hire" class="w-40 h-40 mx-auto mb-8 logo-zoom cursor-pointer">
-            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-                Verified hiring updates for freshers & tech talent.<br>
-                <span class="font-semibold">No scams. No third-party portals. Just real jobs.</span>
-            </p>
-            
-            <div class="bg-gray-50 rounded-xl p-8 mb-12 text-left">
-                <h2 class="text-lg font-bold mb-4">What We Do</h2>
-                <ul class="space-y-3 text-gray-700">
-                    <li class="flex items-start gap-3">
-                        <span class="text-blue-600 font-bold">✓</span>
-                        <span>Share verified hiring updates from MNCs & tech companies</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-blue-600 font-bold">✓</span>
-                        <span>Direct official apply links (no redirects, no scams)</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-blue-600 font-bold">✓</span>
-                        <span>Referral opportunities from employees</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-blue-600 font-bold">✓</span>
-                        <span>AI, tech & fresher-focused roles</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-blue-600 font-bold">✓</span>
-                        <span>Job details: salary, experience, batch eligibility</span>
-                    </li>
-                </ul>
-            </div>
+<body>
+    <!-- Background Glows -->
+    <div class="bg-glow">
+        <div class="glow-circle glow-1"></div>
+        <div class="glow-circle glow-2"></div>
+    </div>
 
-            <p class="text-gray-600 mb-10 text-lg">
-                Follow us on LinkedIn for daily verified job updates.
-            </p>
-
-            <a href="https://www.linkedin.com/company/link2hire" target="_blank" class="inline-block bg-blue-600 text-white px-12 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition shadow-lg">
-                Follow on LinkedIn
-            </a>
+    <!-- Main Container -->
+    <div class="container">
+        <div class="content">
+            <img src="src/logo.png" alt="Link2Hire" class="logo">
             
-            <p class="text-sm text-gray-500 mt-8">Save yourself from fake job posts. Find real opportunities.</p>
+            <h1 class="heading">Coming Soon</h1>
+            <p class="tagline">Daily job updates platform launching soon.</p>
+
+            <form class="form" onsubmit="handleSubmit(event)">
+                <input 
+                    type="email" 
+                    class="input" 
+                    placeholder="Enter your email" 
+                    required
+                >
+                <button type="submit" class="button">Notify Me</button>
+            </form>
+
+            <p class="footer">No spam. Just updates when we launch.</p>
         </div>
-    </section>
+    </div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const email = event.target.querySelector('input[type="email"]').value;
+            if (email) {
+                alert('Thanks! We\'ll notify you when we launch.');
+                event.target.reset();
+            }
+        }
+    </script>
 </body>
 </html>
