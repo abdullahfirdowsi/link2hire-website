@@ -70,14 +70,16 @@
 
         .content {
             text-align: center;
-            max-w-md;
+            max-width: 28rem;
+            margin: 0 auto;
         }
 
         .logo {
-            width: 180px;
-            height: 180px;
-            margin: 0 auto 60px;
+            width: min(92vw, 640px);
+            height: auto;
+            margin: 0 auto 0;
             transition: transform 0.3s ease;
+            display: block;
         }
 
         .logo:hover {
@@ -162,9 +164,9 @@
             }
 
             .logo {
-                width: 140px;
-                height: 140px;
-                margin-bottom: 48px;
+                width: min(92vw, 520px);
+                height: auto;
+                margin-bottom: 0;
             }
 
             .tagline {
