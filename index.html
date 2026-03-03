@@ -3,23 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link2Hire - Coming Soon</title>
+    <title>Link2Hire - Verified Job Updates for Freshers & Tech</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
+        .logo-zoom {
+            transition: transform 0.3s ease-in-out;
+        }
+        .logo-zoom:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body class="bg-white text-gray-900">
     <section class="min-h-screen flex items-center justify-center px-4">
-        <div class="max-w-xl w-full text-center">
-            <img src="src/logo.png" alt="Link2Hire" class="w-24 h-24 mx-auto mb-8">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Link2Hire</h1>
-            <p class="text-lg text-gray-600 mb-12">AI-Powered LinkedIn Job Automation Engine</p>
-            <button class="bg-blue-600 text-white px-12 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition shadow-lg">
-                Coming Soon
-            </button>
-            <p class="text-sm text-gray-500 mt-8">Be the first to automate your job search</p>
+        <div class="max-w-2xl w-full text-center">
+            <img src="src/logo.png" alt="Link2Hire" class="w-24 h-24 mx-auto mb-8 logo-zoom cursor-pointer">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Link2Hire</h1>
+            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                Verified hiring updates for freshers & tech talent.<br>
+                <span class="font-semibold">No scams. No third-party portals. Just real jobs.</span>
+            </p>
+            
+            <div class="bg-gray-50 rounded-xl p-8 mb-12 text-left">
+                <h2 class="text-lg font-bold mb-4">What We Do</h2>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <span class="text-blue-600 font-bold">✓</span>
+                        <span>Share verified hiring updates from MNCs & tech companies</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-blue-600 font-bold">✓</span>
+                        <span>Direct official apply links (no redirects, no scams)</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-blue-600 font-bold">✓</span>
+                        <span>Referral opportunities from employees</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-blue-600 font-bold">✓</span>
+                        <span>AI, tech & fresher-focused roles</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-blue-600 font-bold">✓</span>
+                        <span>Job details: salary, experience, batch eligibility</span>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="text-gray-600 mb-10 text-lg">
+                Follow us on LinkedIn for daily verified job updates.
+            </p>
+
+            <a href="https://www.linkedin.com/company/link2hire" target="_blank" class="inline-block bg-blue-600 text-white px-12 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition shadow-lg">
+                Follow on LinkedIn
+            </a>
+            
+            <p class="text-sm text-gray-500 mt-8">Save yourself from fake job posts. Find real opportunities.</p>
         </div>
     </section>
 </body>
